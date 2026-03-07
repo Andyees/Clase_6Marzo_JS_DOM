@@ -1,0 +1,12 @@
+.caja-secreta {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+  margin-top: 10px;
+}
+.visible {
+  display: block;
+}
+.rojo {
+  background-color: red;
+}

@@ -3,9 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
     <title>Mi primera aplciacion con JS</title>
   </head>
   <body>
+    <h1 id="Titulo">Mi primera pagina web</h1>
+    <button class="btn btn-success" id="btn-magia">Hacer magia</button>
+
+    <img id="foco" src="img/foco apgado.jpg" alt="" srcset="" />
+    <button id="btn-foco">Encender Luz</button>
+
+    <div id="secreto" class="caja-secreta">
+      El codigo de la caja fuerte es 1234
+    </div>
+    <button id="btn-revelar">Mostrar Secreto</button>
+    <br />
+
+    <br />
+<br></br  >
+    <button id="btn-crear" class="btn btn-success">
+      Generar Nueva Tarjeta
+    </button>
+
+<div id="contenedor-tarjetas"></div>
+
+<br><br><br><br>
+
+<label type="password"  for=""> Escribe una contraseña (minimo 8 caracteres)</label>
+<input type="password" id="input-password">
+<p style="color: red; font-weight: bold;" id="mensaje-error"></p>
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <ol>
+      <li>
+        <a href="/">inicio</a>
+      </li>
+      <li><a href="#Contactos">Contacto</a></li>
+      <li><a href="#Servicios">Servicios</a></li>
+    </ol>
+    <div class="container">
+      <form action="">
+        <label class="form-label">Nombre</label>
+        <input
+          class="form-control"
+          placeholder="Ingrese su nombre"
+          type="text"
+        />
+
+        <label class="form-label" for="">Apellidos</label>
+        <input
+          class="form-control"
+          placeholder="Ingrese su Apellido"
+          type="text"
+          name=""
+          id=""
+        />
+        <label class="form-label" for="">Contraseña</label>
+        <input
+          class="form-control"
+          placeholder="Ingrese su contraseña"
+          type="password"
+          name=""
+          id=""
+        />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="checkDefault"
+          />
+
+          <label class="form-check-label" for="checkDefault">
+            Acepto politicas
+          </label>
+        </div>
+
+        <button class="btn btn-success" type="submit">
+          Enviar informacion
+        </button>
+      </form>
+    </div>
+
+    <section id="Servicios">
+      <h1>Servicios</h1>
+      <img
+        src="https://img.freepik.com/vector-gratis/elementos-servicio-habitaciones-hotel_98292-5249.jpg?semt=ais_hybrid&w=740&q=80"
+        alt=""
+      />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque,
+      magni doloremque, error adipisci ab repellat earum ipsum maxime quod odio
+      quibusdam suscipit esse omnis repudiandae voluptatibus voluptas, alias
+      officiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+      magni, a vitae voluptas esse corporis earum dolores cupiditate quidem
+      laboriosam libero necessitatibus dolorem ullam mollitia officiis ex eum
+      suscipit molestias. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Odit saepe, a nam eius tempora pariatur porro provident ipsam!
+      Voluptates ea architecto accusantium magni sint deleniti. Consequatur
+      fugiat laborum qui officiis! Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Facere eaque, magni doloremque, error adipisci ab
+      repellat earum ipsum maxime quod odio quibusdam suscipit esse omnis
+      repudiandae voluptatibus voluptas, alias officiis! Lorem ipsum dolor sit
+      amet consectetur, adipisicing elit. Nemo magni, a vitae voluptas esse
+      corporis earum dolores cupiditate quidem laboriosam libero necessitatibus
+      dolorem ullam mollitia officiis ex eum suscipit molestias. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Odit saepe, a nam eius
+      tempora pariatur porro provident ipsam! Voluptates ea architecto
+      accusantium magni sint deleniti. Consequatur fugiat laborum qui officiis!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque,
+      magni doloremque, error adipisci ab repellat earum ipsum maxime quod odio
+      quibusdam suscipit esse omnis repudiandae voluptatibus voluptas, alias
+      officiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+      magni, a vitae voluptas esse corporis earum dolores cupiditate quidem
+      laboriosam libero necessitatibus dolorem ullam mollitia officiis ex eum
+      suscipit molestias. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Odit saepe, a nam eius tempora pariatur porro provident ipsam!
+      Voluptates ea architecto accusantium magni sint deleniti. Consequatur
+      fugiat laborum qui officiis!
+
+      <a href="/">inicio</a>
+    </section>
+
+    <section id="Contactos">
+      <h1>Contactos</h1>
+
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Titulo</th>
+          <th>Categoria</th>
+          <th>Precio</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Carrooooooooo</td>
+          <td>Transporte</td>
+          <td>20000 dolares</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Carro</td>
+          <td>Transporte</td>
+          <td>20000 dolares</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Carro</td>
+          <td>Transporte</td>
+          <td>20000 dolares</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Carro</td>
+          <td>Transporte</td>
+          <td>20000 dolares</td>
+        </tr>
+      </table>
+
+      <a href="/">inicio</a>
+    </section>
+
     <script src="main.js"></script>
   </body>
+  |
 </html>
