@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(239, 244, 239);
+  color: black;
+  margin: 0;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.caja-ejemplo {
+  background: white;
+  padding: 60px;
+
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: rgb(105, 105, 207);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+button {
+  padding: 10px 15px;
+  background-color: rgb(28, 210, 149);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Modo oscuro*/
+
+body.dark-mode {
+  background-color: rgba(28, 19, 19, 0.725);
+  color: white;
+}
+
+body.dark-mode .caja-ejemplo {
+  background-color: rgb(42, 40, 40);
+}
+
+body.dark-mode input,
+body.dark-mode option {
+  color: white;
+  background-color: rgb(35, 34, 34);
+}

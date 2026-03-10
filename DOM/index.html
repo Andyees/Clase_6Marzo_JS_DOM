@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Ejemplos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nuestra Segunda Clase Manipulando el DOM</h1>
+
+      <button id="btn-dark">Alternar Modo Oscuro</button>
+    </header>
+
+    <main class="container">
+      <section class="caja-ejemplo">
+        <h2>Formulario de registro</h2>
+
+        <form id="registro-form" action="">
+          <input
+            type="text"
+            name="usuario"
+            placeholder="Nombre Completo"
+            required
+          />
+          <input type="email" name="correo" placeholder="Email" required />
+          <select name="pais" id="">
+            <option value="CO">Colombia</option>
+            <option value="MX">Mexico</option>
+            <option value="USA">EEUU</option>
+          </select>
+
+          <button type="submit">Enviar Registro</button>
+        </form>
+
+        <div id="Resultado_registro"></div>
+      </section>
+
+      <section class="caja-ejemplo">
+        <h2>Lista de tareas</h2>
+
+        <div class="input-group">
+          <input
+            type="text"
+            name=""
+            id="tarea-input"
+            placeholder="Nueva tarea..."
+          />
+          <button id="btn-agregar">Agregar</button>
+        </div>
+        <ul id="Lista-tareas"></ul>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
