@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos local storage</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1> Ejemplos paso a paso local storage</h1>
+    <p> Estos son los 3 ejemplos basicos para entender el local storage</p>
+    <hr>
+
+
+    <!-- ejemplo 1 nota digital-->
+     <div class="section">
+        <h2> La Nota digital ( texto simple)</h2>
+        <p> escribe algo y recarga la pagina</p>
+        <input type="text"  id="notaInput" placeholder="escribe tu nota aqui"> 
+        <button id="btnGuardarNota"> Guardar nota </button>
+        <div id="resultadoNota" class="display"></div>
+     </div>
+
+     <!-- ejemplo 2 contador presistente-->
+      <div class="section">
+       <h2> Contador (numeros) </h2>
+       <p> haz clik y refresca la pagina. el numero no se va borrar </p> 
+       <button id="btnSumar"> sumar +1</button>
+       <button id="btnReset" style="background: #fff; color: red;"> reset</button>
+       <button id="btnborrar" style="background: #fff; color: red;"> borrar</button>
+       <div  class="display" > clicks acumulados: <span id="contadorTexto">0</span></div>
+
+    </div>
+
+
+
+</body>
+<script src="main.js"></script>
+</html>
