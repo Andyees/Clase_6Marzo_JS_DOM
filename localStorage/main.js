@@ -42,4 +42,17 @@ btnborrar.addEventListener ( "click" ,() => {
 localStorage.clear() 
 })
 
+const btnTema = document.getElementById("btnTema");
+
+if (localStorage.getItem ("esOscura") === "true") {  
+  document.body.classList.add("dark-mode");
+}
+
+btnTema.addEventListener("click", () => {
+  document.body.classList.toggle ("dark-mode");
+
+  const estadoActual = document.body.classList.contains( "dark-mode")
+  localStorage.setItem ( "esOscura", estadoActual);
+
+})
  

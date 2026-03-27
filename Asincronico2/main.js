@@ -50,3 +50,7 @@ searchInput.addEventListener("input", () => {
     BusquedaMovie(searchInput.value);
   }, 500);
 });
+
+
+
+
