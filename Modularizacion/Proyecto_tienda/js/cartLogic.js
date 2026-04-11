@@ -1,8 +1,8 @@
 export let carrito = []
 
-export function AgregarAlCarrito(producto) {
+export function agregarAlCarrito(producto) {
     carrito.push(producto);
-    return [... carrito]
+    return [... carrito];
 } //   insertamos un producto al final de nuestra lista de compras
 
 export function obtenerTotal() {
@@ -11,6 +11,6 @@ export function obtenerTotal() {
     } ,0); // Sumar todos los precios de los productos p
 }
  export function limpiarCarrito() {
-    carrito = []
-    return carrito
+    carrito = [];
+    return carrito;
  } // vaciar la variable carrito

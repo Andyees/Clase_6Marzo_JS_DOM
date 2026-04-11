@@ -27,7 +27,7 @@ botones.forEach(boton => {
 
         localStorage.setItem("mis_deseos", JSON.stringify(favoritos)) // aqui se guarda el arreglo en el almacenamiento local
     })
-    
+const botones_nofavorito =
 });
 
 
