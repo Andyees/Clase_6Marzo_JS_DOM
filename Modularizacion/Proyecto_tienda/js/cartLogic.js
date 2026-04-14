@@ -13,4 +13,20 @@ export function obtenerTotal() {
  export function limpiarCarrito() {
     carrito = [];
     return carrito;
- } // vaciar la variable carrito
+} // vaciar la variable carrito
+
+export function guardarCarrito(datos) {
+    const datosEnTexto = JSON.stringify(datos)
+    localStorage.setItem("carrito_tienda", datosEnTexto)
+    console.log ( "los datos se guardaron en el navegador")
+}
+export function cargarCarrito() {
+    const datos = localStorage.getItem("carrito_tienda")
+    return datos ? JSON.parse(datos) : [];
+}
+export function eliminarHistorial() {
+    localStorage.removeItem("carrito_tienda")
+}
+export function setCarrito(nuevoCarrito) {
+    carrito = nuevoCarrito;
+}
