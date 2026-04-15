@@ -4,7 +4,7 @@ let favoritos = JSON.parse(localStorage.getItem("mis_deseos"))  || []
 favoritos.forEach(id => {
     const elemento = document.getElementById(id);
     if (elemento) elemento.classList.add("active");
-    
+
 });
 // seleccionando los botones
 const botones = document.querySelectorAll(".BtnFavorito")
@@ -18,7 +18,7 @@ botones.forEach(boton => {
 
             favoritos = favoritos.filter (item => item !== idActual);
             tarjeta.classList.remove("active"); // lo que es favorito se quita
-            
+
         }
         else {
             favoritos.push(idActual)
@@ -27,7 +27,7 @@ botones.forEach(boton => {
 
         localStorage.setItem("mis_deseos", JSON.stringify(favoritos)) // aqui se guarda el arreglo en el almacenamiento local
     })
-const botones_nofavorito =
+
 });
 
 

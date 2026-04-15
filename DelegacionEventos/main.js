@@ -6,3 +6,17 @@ btnCrear.addEventListener("click", () => {
     const nuevoCuadro = crearElementoCuadro(color)
     padre.appendChild(nuevoCuadro);
 });
+
+padre.addEventListener("click", (event) => {
+    const elemento = event.target;
+
+    if (elemento.classList.contains("cuadro")) {
+        setTimeout(()=> elemento.remove(),300)
+    }
+
+
+}
+
+)
+const titulo = document.getElementById("titulo1")
+titulo.classList.add("titulo2");

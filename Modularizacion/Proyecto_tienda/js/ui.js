@@ -1,4 +1,4 @@
-import { carrito } from "./cartLogic.js"; 
+import { carrito } from "./cartLogic.js";
 
 export function mostrarProductos(lista, contenedor, callbackclick) {
     contenedor.innerHTML = "";
@@ -6,12 +6,12 @@ export function mostrarProductos(lista, contenedor, callbackclick) {
     lista.forEach(prod => {
         const tarjeta = document.createElement("div");
         tarjeta.className = "tarjeta";
-        
+
         tarjeta.innerHTML = `
             <div class="icon"> ${prod.imagen} </div>
-            <h3> ${prod.nombre} </h3>
+            <h3> ${prod.nombre} </h3
             <p> $${prod.precio} </p>
-            <button id="btn-${prod.id}"> agregar </button>
+>            <button id="btn-${prod.id}"> agregar </button>
         `;
         contenedor.appendChild(tarjeta);
 
