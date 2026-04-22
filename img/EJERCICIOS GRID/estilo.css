@@ -1,0 +1,27 @@
+.container {
+background: lightsalmon;
+border: 5px solid black;
+border-radius: 6px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr
+;
+grid-template-rows: 100px 100px;
+gap: 5px;
+padding: 5px
+}
+.container div:first-child {
+background: lightgreen;
+grid-column: 1/-1;
+}
+.container div:nth-child(2) {
+    background: lightgray;
+    grid-row: 2/-1;
+}
+
+
+.container div {
+    background: lightcyan;
+    border-radius: 10px;
+    border: 2px solid#09f
+
+}
